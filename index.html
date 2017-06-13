@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="bulma.css">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="my-tab.js"></script>
+	</head>
+	<body>
+		<div class="tabs is-medium">
+			<ul id="myTab">
+				<li class="is-active" data-tab='tab1'><a>Pictures</a></li>
+				<li data-tab='tab2'><a>Music</a></li>
+				<li data-tab='tab3'><a>Videos</a></li>
+				<li data-tab='tab4'><a>Documents</a></li>
+			</ul>
+		</div>
+		<div class="container">
+			<div id="tabsection">
+				<div id="tab1">1</div>
+				<div id="tab2">2</div>
+				<div id="tab3">3</div>
+				<div id="tab4">4</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		$( "#myTab" ).tab({
+			tabContent: $("#tabsection")
+		});
+	</script>	
+</html>
